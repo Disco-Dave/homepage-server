@@ -1,0 +1,19 @@
+{
+  "name": "my-tab-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "rm -rf .parcel/serve && parcel --cache-dir .parcel/cache -d .parcel/serve src/index.html --open",
+    "bundle": "rm -rf dist && parcel build --public-url \"./\" --no-source-maps --cache-dir .parcel/cache -d dist src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
+}

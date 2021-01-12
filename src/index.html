@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <header class="search">
+    <ol class="search__tabs">
+      <li class="tab tab--active" title="DuckDuckGo">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="duckduckgo" src="images/duckduckgo.png" />
+        </button>
+      </li>
+      <li class="tab" title="Arch Wiki">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="arch linux wiki" src="images/arch_linux.png" />
+        </button>
+      </li>
+      <li class="tab" title="Hoogle">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="hoogle" src="images/haskell.png" />
+        </button>
+      </li>
+      <li class="tab" title="Mozilla Web Docs">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="mdn" src="images/mozilla.png" />
+        </button>
+      </li>
+      <li class="tab" title="Wikipedia">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="wikipedia" src="images/wikipedia.png" />
+        </button>
+      </li>
+      <li class="tab" title="Youtube">
+        <button class="tab__button" type="button">
+          <img class="tab__icon" alt="youtube" src="images/youtube.png" />
+        </button>
+      </li>
+    </ol>
+
+    <div class="search__form">
+      <form id="search-form" class="search-bar">
+        <input class="search-bar__input" type="text" name="search" autocomplete="off" placeholder="Search DuckDuckGo" />
+        <button class="search-bar__submit-button" type="submit" title="Execute search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main class="links">
+    <div clas="link-group">
+      <h1 class="link-group__name">
+        News
+      </h1>
+
+      <ul class="link-group__links">
+        <li>
+          <a class="link" href="https://news.ycombinator.com/">
+            Hacker News
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://lobste.rs/">
+            Lobsters
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://haskell.pl-a.net/">
+            Haskell Planetarium
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://haskellweekly.news/">
+            Haskell Weekly
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://this-week-in-rust.org/">
+            This Week in Rust
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div clas="link-group">
+      <h1 class="link-group__name">
+        API Docs
+      </h1>
+
+      <ul class="link-group__links">
+        <li>
+          <a class="link" href="https://developer.mozilla.org/en-US/docs/Web">
+            MDN Web Docs
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://wiki.archlinux.org/index.php">
+            Arch Wiki
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://hoogle.haskell.org/">
+            Hoogle
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.microsoft.com/en-us/documentation/">
+            Microsoft
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div clas="link-group">
+      <h1 class="link-group__name">
+        Discourses
+      </h1>
+
+      <ul class="link-group__links">
+        <li>
+          <a class="link" href="https://discourse.haskell.org/">
+            Haskell
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://users.rust-lang.org/">
+            Rust
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://discourse.purescript.org/">
+            Purescript
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://discourse.elm-lang.org/">
+            Elm
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div clas="link-group">
+      <h1 class="link-group__name">
+        Leisure
+      </h1>
+
+      <ul class="link-group__links">
+        <li>
+          <a class="link" href="https://reddit.com/">
+            Reddit
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://youtube.com/">
+            Youtube
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://discord.com/app/">
+            Discord
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div clas="link-group">
+      <h1 class="link-group__name">
+        Streaming
+      </h1>
+
+      <ul class="link-group__links">
+        <li>
+          <a class="link" href="https://netflix.com/">
+            Netflix
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://hulu.com/">
+            Hulu
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
