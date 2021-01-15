@@ -51,10 +51,11 @@ const setTab = (tab) => (e) => {
 
   searchInput.placeholder = 'Search ' + tab.attributes.title.value;
   tab.classList.add('tab--active');
+
+  searchInput.focus();
 }
 
 for (const tab of tabs) {
   const button = tab.querySelector('button');
   button.addEventListener('click', setTab(tab));
 }
-
