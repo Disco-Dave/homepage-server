@@ -1,14 +1,3 @@
-# Contents
-
-- [homepage-server](#homepage-server)
-  - [Example Screenshot](#homepage-server#Example Screenshot)
-  - [Configuration](#homepage-server#Configuration)
-    - [Defaults](#homepage-server#Configuration#Defaults)
-    - [Command Line](#homepage-server#Configuration#Command Line)
-    - [Configuration File](#homepage-server#Configuration#Configuration File)
-    - [CSS Variables](#homepage-server#Configuration#CSS Variables)
-  - [How to Install](#homepage-server#How to Install)
-
 # homepage-server
 A command line tool for hosting a page with links and a search bar.
 Useful when using [tridactyl](https://github.com/tridactyl/tridactyl), so you can have a neat looking home/newtab page.
@@ -135,4 +124,4 @@ html {
 ## How to Install
 1. Clone this repository
 2. Run `stack install`
-3. Create a [config.yaml](#Configuration File) file in `$XDG_CONFIG_HOME/homepage-server/`
+3. Create a `config.yaml` file in `$XDG_CONFIG_HOME/homepage-server/`
