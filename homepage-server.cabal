@@ -1,0 +1,97 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           homepage-server
+version:        0.1.0.0
+synopsis:       Host a local server on any port for your browser's homepage
+description:    Please see the README on GitHub at <https://github.com/githubuser/homepage-server#readme>
+category:       Web
+homepage:       https://github.com/Disco-Dave/homepage-server#readme
+bug-reports:    https://github.com/Disco-Dave/homepage-server/issues
+author:         David Burkett
+maintainer:     David Burkett
+copyright:      2022 David Burkett
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+data-files:
+    data/index.js
+    data/index.css
+    data/search-solid.svg
+
+source-repository head
+  type: git
+  location: https://github.com/Disco-Dave/homepage-server
+
+library
+  exposed-modules:
+      Homepage.Server
+      Homepage.Server.Config
+      Homepage.Server.Config.CliArgs
+      Homepage.Server.Http
+      Homepage.Server.Page
+      Homepage.Server.Page.Data
+  other-modules:
+      Paths_homepage_server
+  hs-source-dirs:
+      src
+  default-extensions:
+      FlexibleContexts
+      FlexibleInstances
+      InstanceSigs
+      LambdaCase
+      NamedFieldPuns
+      NumericUnderscores
+      OverloadedStrings
+      RecordWildCards
+      StrictData
+      TypeApplications
+      ViewPatterns
+  ghc-options: -Weverything -Wno-implicit-prelude -Wno-safe -Wno-unsafe -Wno-missing-exported-signatures -Wno-missing-import-lists -Wno-missed-specialisations -Wno-all-missed-specialisations -Wno-missing-local-signatures -Wno-monomorphism-restriction -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -Wno-prepositive-qualified-module
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
+    , blaze-markup
+    , bytestring
+    , directory
+    , filepath
+    , fsnotify
+    , mime-types
+    , optparse-applicative
+    , stm
+    , text
+    , wai
+    , warp
+    , yaml
+  default-language: Haskell2010
+
+executable homepage-server
+  main-is: Main.hs
+  other-modules:
+      Paths_homepage_server
+  hs-source-dirs:
+      app
+  default-extensions:
+      FlexibleContexts
+      FlexibleInstances
+      InstanceSigs
+      LambdaCase
+      NamedFieldPuns
+      NumericUnderscores
+      OverloadedStrings
+      RecordWildCards
+      StrictData
+      TypeApplications
+      ViewPatterns
+  ghc-options: -Weverything -Wno-implicit-prelude -Wno-safe -Wno-unsafe -Wno-missing-exported-signatures -Wno-missing-import-lists -Wno-missed-specialisations -Wno-all-missed-specialisations -Wno-missing-local-signatures -Wno-monomorphism-restriction -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -Wno-prepositive-qualified-module -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , homepage-server
+  default-language: Haskell2010

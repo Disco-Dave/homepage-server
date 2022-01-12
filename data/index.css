@@ -2,31 +2,15 @@ html {
   font-family: FreeSans, sans-serif;
   font-size: 8px;
 
-  /* Nord Colors: https://www.nordtheme.com/docs/colors-and-palettes */
-  --nord-polar-night-1: hsl(220, 16%, 22%);
-  --nord-polar-night-2: hsl(222, 16%, 28%);
-  --nord-polar-night-3: hsl(220, 17%, 32%);
-  --nord-polar-night-4: hsl(220, 16%, 36%);
-
-  --nord-snow-storm-1: hsl(219, 28%, 88%);
-  --nord-snow-storm-2: hsl(218, 27%, 92%);
-  --nord-snow-storm-3: hsl(218, 27%, 94%);
-
-  --nord-frost-1: hsl(179, 25%, 65%);
-  --nord-frost-2: hsl(193, 43%, 67%);
-  --nord-frost-3: hsl(210, 34%, 63%);
-  --nord-frost-4: hsl(213, 32%, 52%);
-
-  --nord-aurora-red: hsl(354, 42%, 56%);
-  --nord-aurora-orange: hsl(14, 51%, 63%);
-  --nord-aurora-yellow: hsl(40, 71%, 73%);
-  --nord-aurora-green: hsl(92, 28%, 65%);
-  --nord-aurora-purple: hsl(311, 20%, 63%);
+  --background-color: hsl(220, 16%, 22%);
+  --input-background-color: hsl(222, 16%, 28%);
+  --font-color: hsl(219, 28%, 88%);
+  --highlight-color: hsl(179, 25%, 65%);
 }
 
 body {
-  background-color: var(--nord-polar-night-1);
-  color: var(--nord-snow-storm-1);
+  background-color: var(--background-color);
+  color: var(--font-color);
   margin: 0;
   padding: 14rem;
 
@@ -64,9 +48,9 @@ body {
 
 .search-bar__input,
 .search-bar__submit-button {
-  color: var(--nord-snow-storm-1);
-  background-color: var(--nord-polar-night-2);
-  border: solid var(--nord-snow-storm-1) 0.5rem;
+  color: var(--font-color);
+  background-color: var(--input-background-color);
+  border: solid var(--font-color) 0.5rem;
   height: 8rem;
 }
 
@@ -74,19 +58,20 @@ body {
   padding-left: 2.25rem;
   font-size: 2.25rem;
   border-right: none;
+  outline: none;
   width: calc(100% - var(--button-width));
 }
 
 .search-bar__submit-button {
   border-left: none;
-  padding: 0;
+  padding: 2.25rem;
   width: var(--button-width);
   font-size: 2.75rem;
   cursor: pointer;
 }
 
 .search-bar__submit-button:hover {
-  color: var(--nord-frost-1);
+  color: var(--highlight-color);
 }
 
 .search__tabs {
@@ -112,17 +97,17 @@ body {
 }
 
 .tab:hover .tab__button {
-  border: solid var(--nord-snow-storm-1) 0.5rem;
+  border: solid var(--font-color) 0.5rem;
 }
 
 .tab--active .tab__button {
   z-index: 100;
-  border: solid var(--nord-snow-storm-1) 0.5rem;
+  border: solid var(--font-color) 0.5rem;
 }
 
 .tab--active::after {
-  color: var(--nord-polar-night-1);
-  background-color: var(--nord-polar-night-1);
+  color: var(--background-color);
+  background-color: var(--background-color);
   content: ".";
   padding: 0;
   margin: 0;
@@ -153,7 +138,7 @@ body {
 .search:hover .search-bar__input,
 .search:hover .search-bar__submit-button,
 .search:hover .tab__button {
-  border-color: var(--nord-frost-1);
+  border-color: var(--highlight-color);
 }
 
 .links {
@@ -186,11 +171,11 @@ body {
 .link {
   font-size: 2rem;
   text-decoration: none;
-  color: var(--nord-snow-storm-1);
+  color: var(--font-color);
 }
 
 .link:hover {
-  color: var(--nord-frost-1);
+  color: var(--highlight-color);
 }
 
 @media screen and (max-width: 55rem) {
